@@ -12,6 +12,7 @@
 
 <!-- Bootstrap core CSS -->
 <link href="css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
 
 <!-- Just for debugging purposes. Don't actually copy this line! -->
 <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -145,7 +146,21 @@
             Balcony</br>
             Parking
             </p>
-            <p class="lead">Luxurious executive grade furnished apartments 10 min from the Montreal airport in the quiet suburban neighborhood of Dorval</p>
+            <p class="lead">Luxurious executive grade furnished apartments 10 min from the Montreal airport in the quiet suburban neighborhood of <a href="http://www.ville.dorval.qc.ca/en/default.asp?contentID=509" target="_dorval">Dorval</a></p>
+            <p>
+            <a href="img/about/dorval3.jpg" rel="prettyPhoto[pp_gal]" title="Dorval Lakeshore">
+                <img src="img/about/thumb/dorval3.jpg" alt="Dorval Lakeshore" /></a>
+            <a href="img/about/dorval9.jpg" rel="prettyPhoto[pp_gal]" title="Dorval Lakeshore"><img src="img/about/thumb/dorval9.jpg" alt="Dorval Lakeshore" /></a>
+            <a href="img/about/dorval4.jpg" rel="prettyPhoto[pp_gal]" title="Dorval Playgrounds">
+                <img src="img/about/thumb/dorval4.jpg" alt="Dorval Playgrounds" /></a>
+            <a href="img/about/dorval1.jpg" rel="prettyPhoto[pp_gal]" title="Dorval Park"><img src="img/about/thumb/dorval1.jpg" alt="Dorval Park" /></a>
+            <a href="img/about/dorval2.jpg" rel="prettyPhoto[pp_gal]" title="Dorval Park"><img src="img/about/thumb/dorval2.jpg" alt="Dorval Park" /></a>
+            <a href="img/about/dorval5.jpg" rel="prettyPhoto[pp_gal]" title="Dorval Park"><img src="img/about/thumb/dorval5.jpg" alt="Dorval Park" /></a>
+            <a href="img/about/dorval6.jpg" rel="prettyPhoto[pp_gal]" title="Dorval Park"><img src="img/about/thumb/dorval6.jpg" alt="Dorval Park" /></a>
+            <a href="img/about/dorval7.jpg" rel="prettyPhoto[pp_gal]" title="Dorval Park"><img src="img/about/thumb/dorval7.jpg" alt="Dorval Park" /></a>
+            <a href="img/about/dorval8.jpg" rel="prettyPhoto[pp_gal]" title="Dorval Park"><img src="img/about/thumb/dorval8.jpg" alt="Dorval Park" /></a>
+           </p>
+
         </div>
         <div class="col-md-4">
             <img class="featurette-image img-responsive" src="img/main/master_bedroom_500.jpg" alt="Main floor master bedroom">
@@ -169,6 +184,12 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/holder.js"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function(){
+        $("a[rel^='prettyPhoto']").prettyPhoto();
+        });
+</script>
 </body>
 </html>
